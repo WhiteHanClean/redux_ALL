@@ -1,3 +1,4 @@
 import { createStore } from "redux"
+import { goldenCardReducer } from "./reducer/goldenCardReducer"
 
-const store = createStore()
+export const store = createStore(goldenCardReducer)
