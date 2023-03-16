@@ -1,8 +1,9 @@
 const initalState = {
+  user: 'Kera',
   cash: 50000000,
 };
 
-function counterReducer(state = initalState, action) {
+export function goldenCardReducer(state = initalState, action) {
   switch (action.type) {
     case "incremented":
       return { cash: state.cash + 1 };
